@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Engagement&display=swap');
+
+.main {
+    background-color:black;
+    font-family: 'Playfair Display', serif;
+    
+}
+.centered-title {
+    text-align: center;
+    color: #fdfdfe;
+}
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div[data-testid="stExpander"] {
+    color:Red;
+    background-color: #090909; /* Slightly pink background */
+    box-shadow: 0 4px 12px 0 rgba(171, 114, 114, 0.2); /* Bottom shadow */
+    border-radius: 5px; /* Optional: Add some rounding to the corners */
+    padding: 10px; /* Optional: Add some padding */
+}
+div[data-testid="column"]{
+    box-shadow: 0 4px 12px 0 rgba(171, 114, 114, 0.2); /* Bottom shadow */
+    border-radius: 2px; /* Optional: Add some rounding to the corners */
+    padding: 10px; /* Optional: Add some padding */
+}
+
+div [data-testid="stSidebarUserContent"]{
+    border-radius: 4px; 
+    opacity: 0.9;
+    color:red;
+    padding: 10 px
+}
+div[data-testid="stSidebarContent"]{
+    /* Optional: Add some rounding to the corners */
+    border-radius: 4px; 
+    background-color: #e5e5f7;
+    opacity: 0.9;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #f7454555, #f74545 );
+    color:red;
+    padding: 10 px
+}
+
+div[data-testid="HorizontalBlock"]{
+    /* Optional: Add some rounding to the corners */
+    border-radius: 4px; 
+    background-color: #e5e5f7;
+    opacity: 0.9;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #f7454555, #f74545 );
+    color:red;
+    padding: 10 px
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"]{
+    border-radius: 10px; 
+    background-color: black;
+    color:red  
+}
+div [data-baseweb="select"]{
+    background-color: black; /* Slightly pink background */
+    box-shadow: 0 4px 12px 0 rgba(171, 114, 114, 0.2); /* Bottom shadow */
+    border-radius: 2px; /* Optional: Add some rounding to the corners */
+    padding: 10px; /* Optional: Add some padding */  
+}
+div [data-baseweb=select]  {
+    max-height: 300px;
+    overflow: auto;
+}
+span[data-baseweb=select]{
+    font-size: 7px !important; /* Adjust the font size as needed */
+    padding: 1px 4px !important; /* Adjust the padding as needed */
+    
+}
+div [data-testid="stFileUploaderDropzone"]{
+    background-color: black; /* Slightly pink background */
+    box-shadow: 0 4px 12px 0 rgba(171, 114, 114, 0.2); /* Bottom shadow */
+    border-radius: 2px; /* Add some rounding to the corners */
+    padding: 4px; /* Add some padding */
+    color: red; 
+} 
+div [data-testid="stFileUploader"]{
+    border-radius: 4px; /* Add some rounding to the corners */
+    padding: 4px; /* Add some padding */
+    color: red;  
+
+}
+div [data-testid="baseButton-secondary"]{
+    background-color: black; /* Slightly pink background */
+    box-shadow: 0 4px 12px 0 rgba(171, 114, 114, 0.2); /* Bottom shadow */
+    border-radius: 10px; /* Add some rounding to the corners */
+    padding: 4px; /* Add some padding */
+    color: white; 
+}
+div [data-testid="stNotificationContentInfo"]{
+    background-color: black; /* Slightly pink background */
+    color: white; 
+}
+div [data-testid="stMarkdownContainer"]{
+    opacity: 0.8;
+    background-color: black; /* Slightly pink background */
+    border-radius: 10px; /* Add some rounding to the corners */
+    padding: 4px; /* Add some padding */
+    color: red; 
+}
+/* Targeting h2 elements specifically within the div */
+div[data-testid="stMarkdownContainer"] h2 {
+    color: white;
+    padding: 4px;  /* Change this to your desired color */
+}
+div [data-testid="stImage"]{
+    padding: 100px 0px 0px 0px;
+}
+
+div [data-testid="stWidgetLabel"]{
+    border-radius: 4px; /* Add some rounding to the corners */
+    padding: 4px; /* Add some padding */
+    color: red; 
+}
+
+div [class="stNumberInput"]{
+    border-radius: 4px; /* Add some rounding to the corners */
+    padding: 4px; /* Add some padding */  
+}
+
+div [data-baseweb="input"]{
+    border-radius: 4px; /* Add some rounding to the corners */
+    padding: 4px; /* Add some padding */  
+}
+
