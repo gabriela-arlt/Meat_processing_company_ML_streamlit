@@ -39,7 +39,7 @@ div [data-testid="stSidebarUserContent"]{
     color:red;
     padding: 10 px
 }
-div[data-testid="stSidebar"]{
+div[class="css-6qob1r e1fqkh3o3"]{
     /* Optional: Add some rounding to the corners */
     border-radius: 4px; 
     background-color: #292963;
