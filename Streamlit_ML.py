@@ -375,58 +375,5 @@ if uploaded_file is not None:
         with st.expander("Cluster Summary"):
                  st.write("Number of points per cluster:", cluster_summary.head(10))
 
-    ######### DBSCAN #################
-
-    # Add header for DBSCAN section
-    #st.header("DBSCAN Clustering")
-#
-    ## Sidebar content for DBSCAN clustering options
-    #with st.sidebar:
-    #    st.header("DBSCAN Clustering Options")
-    #    eps = st.number_input("Select eps value", min_value=0.1, max_value=10.0, value=0.5, step=0.1)
-    #    min_samples = st.number_input("Select min_samples value", min_value=1, max_value=100, value=5)
-#
-    ## Apply DBSCAN clustering using the scaled data for Frequency, Recency, and Sales
-    #dbscan = DBSCAN(eps=eps, min_samples=min_samples)
-    #kmeans_data_clean['DBSCAN_Cluster'] = dbscan.fit_predict(kmeans_data_scaled)
-    #
-    #  # **Add this line to convert 'Cluster' column to string type:**
-    #kmeans_data_clean['DBSCAN_Cluster'] = kmeans_data_clean['DBSCAN_Cluster'].astype(object)
-#
-    ## Label noise points as a separate cluster
-    #kmeans_data_clean['DBSCAN_Cluster'] = kmeans_data_clean['DBSCAN_Cluster'].apply(lambda x: 'Noise' if x == -1 else x)
-#
-    ## 3D plot of DBSCAN clusters
-    #fig_dbscan = px.scatter_3d(kmeans_data_clean, x='Sales', y='Recency', z='Frequency', color='DBSCAN_Cluster', 
-    #                           title='DBSCAN Clustering',
-    #                           labels={'Sales': 'Total Sales', 'Recency': 'Recency', 'Frequency': 'Transaction Frequency'},
-    #                           color_discrete_sequence=px.colors.sequential.Reds)
-    #fig_dbscan.update_layout(scene=dict(
-    #                                xaxis=dict(backgroundcolor="black",
-    #                                           gridcolor="white",
-    #                                           showbackground=True,
-    #                                           zerolinecolor="white",),
-    #                                yaxis=dict(backgroundcolor="black",
-    #                                           gridcolor="white",
-    #                                           showbackground=True,
-    #                                           zerolinecolor="white"),
-    #                                zaxis=dict(backgroundcolor="black",
-    #                                           gridcolor="white",
-    #                                           showbackground=True,
-    #                                           zerolinecolor="white"),),
-    #                         paper_bgcolor='rgba(0,0,0,0)',
-    #                         plot_bgcolor='rgba(0,0,0,0)')
-    #col_dbscan1, col_dbscan2 = st.columns([2, 4])
-    #with col_dbscan1:
-    #    st.image("kmeans_frame.png", use_column_width=True)
-    #with col_dbscan2:
-    #    st.plotly_chart(fig_dbscan, use_container_width=True)
-
-    ## Calculate and display the number of points per cluster for DBSCAN
-    #dbscan_cluster_counts = kmeans_data_clean['DBSCAN_Cluster'].value_counts().reset_index()
-    #dbscan_cluster_counts.columns = ['Cluster', 'Count']
-    #st.write("Number of points per DBSCAN cluster:")
-    #st.dataframe(dbscan_cluster_counts)
-
 else:
     st.info('Please upload a CSV file to proceed.')
