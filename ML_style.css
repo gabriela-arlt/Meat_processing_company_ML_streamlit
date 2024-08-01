@@ -103,7 +103,7 @@ div [data-testid="stNotificationContentInfo"]{
     background-color: black; /* Slightly pink background */
     color: white; 
 }
-div [data-testid="stMarkdownContainer"]{
+div [kind="secondary"]{
     background-color: black; /* Slightly pink background */
     border-radius: 10px; /* Add some rounding to the corners */ /* Add some padding */
     color: red; 
