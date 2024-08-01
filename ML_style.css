@@ -42,8 +42,7 @@ div [data-testid="stSidebarUserContent"]{
 div[data-testid="stSidebar"]{
     /* Optional: Add some rounding to the corners */
     border-radius: 4px; 
-    background-color: #e5e5f7;
-    opacity: 0.9;
+    background-color: #292963;
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #f7454555, #f74545 );
     color:red;
     padding: 10 px
